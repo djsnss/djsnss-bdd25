@@ -5,44 +5,51 @@ const departmentData = [
   {
     id: "aids",
     name: "AIDS",
-    score: 95,
+    score: 0,
     image: "./assets/Mercury-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #F3AD5C 70%, #F6F1AE 100%)"
   },
   {
     id: "aiml",
     name: "AIML",
-    score: 88,
+    score: 0,
     image: "./assets/Venus-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #78470F 70%, #EEDACC 100%)"
+
   },
   {
     id: "it",
     name: "IT",
-    score: 95,
+    score: 0,
     image: "./assets/Earth-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #4AABDF 70%, #CEF2FF 100%)"
   },
   {
     id: "comps",
     name: "COMPS",
-    score: 88,
+    score: 0,
     image: "./assets/Mars-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #FB1F07 70%, #FFE2DD 100%)"
   },
   {
     id: "extc",
     name: "EXTC",
-    score: 92,
+    score: 0,
     image: "./assets/Jupiter-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #6C5330 70%, #F8C462 100%)"
   },
   {
     id: "mech",
     name: "MECH",
-    score: 80,
+    score: 0,
     image: "./assets/Saturn-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #010101 0%, #F5A511 100%)"
   },
   {
     id: "cseds",
@@ -50,13 +57,23 @@ const departmentData = [
     score: 90,
     image: "./assets/Uranus-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #0675E4 70%, #CAEDF9 100%)"
   },
   {
     id: "icb",
     name: "ICB",
-    score: 92,
+    score: 0,
     image: "./assets/Neptune-removebg-preview.png",
     rocket: "./assets/rocket.png",
+    color: "linear-gradient(270deg, #0239FF 70%, #C5CAFA 100%)"
+  },
+  {
+    id: "outsiders",
+    name: "Outsiders",
+    score: 0,
+    image: "./assets/Sun.png",
+    rocket: "./assets/rocket.png",
+    color: "linear-gradient(90deg, #fdfd08ff 0%, #ea951dff 88.94%)"
   },
 ];
 
@@ -68,7 +85,7 @@ export function BloodDonationLeaderboard() {
 
   // Simulate API fetch
   useEffect(() => {
-    setTargetScores([95, 88, 95, 88, 92, 80, 90, 92]);
+    setTargetScores([95, 88, 95, 88, 92, 80, 90, 92,85]);
   }, []);
 
   // Animate scores
@@ -140,7 +157,7 @@ export function BloodDonationLeaderboard() {
           return (
             <div key={dept.id} className="flex items-center gap-4">
               {/* Department name */}
-              <div className="w-24 text-right">
+              <div className="w-24 text-center">
                 <span className="font-bold text-xl text-red-700 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">
                   {dept.name}
                 </span>
@@ -159,7 +176,7 @@ export function BloodDonationLeaderboard() {
                     className="h-full transition-all duration-300 ease-out"
                     style={{
                       width: `${widthPercentage}%`,
-                      background: "linear-gradient(90deg, #f87171, #fbbf24)", // red to yellow gradient trail
+                      background: dept.color, // red to yellow gradient trail
                       borderRadius: "9999px", // keep rounded ends
                     }}
                   />
