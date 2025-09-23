@@ -43,7 +43,7 @@ export function BloodDonationLeaderboard() {
     return () => clearInterval(interval);
   }, [targetScores]);
 
-  const highestScore = Math.max(...targetScores);
+  const highestScore = Math.max(...targetScores)+10;
   const barMax = highestScore + 10;
 
   return (
