@@ -132,21 +132,18 @@ export function BloodDonationLeaderboard() {
           style={{ transform: "scaleX(1)" }}
         />
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-skyblue-600 tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]">
+          <h1 className="text-4xl md:text-5xl font-bold text-skyblue-600 tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]"
+          style={{ fontFamily: "'Raleway', sans-serif" }}
+          >
           
             BLOOD DONATION 🩸
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold text-skyblue-500 tracking-wide mt-1 italic">
+          <h2 className="text-2xl md:text-3xl font-bold text-skyblue-500 tracking-wide mt-1 italic"
+          style={{ fontFamily: "'Raleway', sans-serif" }}
+          >
             LEADERBOARD
           </h2>
         </div>
-        <img
-          src="/assets/DJSNSSLogo.png"
-          alt=""
-          width={90}
-          height={90}
-          style={{ transform: "scaleX(1)" }}
-        />
       </div>
 
       {/* Leaderboard bars */}
@@ -161,7 +158,9 @@ export function BloodDonationLeaderboard() {
             <div key={dept.id} className="flex items-center gap-4">
               {/* Department name */}
               <div className="w-24 text-center">
-                <span className="font-bold text-xl text-red-700 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]">
+                <span className="font-bold text-xl text-red-700 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]"
+                style={{ fontFamily: "'Roboto', sans-serif" }}
+                >
                   {dept.name}
                 </span>
               </div>
@@ -214,7 +213,9 @@ export function BloodDonationLeaderboard() {
                     scale: "1.2",
                   }}
                 />
-                <span className="font-bold text-2xl md:text-3xl text-red-700 bg-amber-100 px-2 md:px-3 py-1 rounded-full">
+                <span className="font-bold text-2xl md:text-3xl text-red-700 bg-amber-100 px-2 md:px-3 py-1 rounded-full"
+                style={{ fontFamily: "'Saira', sans-serif" }}
+                >
                   {animatedScores[index]}
                 </span>
               </div>
