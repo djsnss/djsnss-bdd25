@@ -20,16 +20,16 @@ const departmentData = [
 
   },
   {
-    id: "it",
-    name: "IT",
+    id: "comps",
+    name: "COMPS",
     score: 0,
     image: "./assets/Earth-removebg-preview.png",
     rocket: "./assets/rocket.png",
     color: "linear-gradient(270deg, #4AABDF 70%, #CEF2FF 100%)"
   },
   {
-    id: "comps",
-    name: "COMPS",
+    id: "cseds",
+    name: "CSEDS",
     score: 0,
     image: "./assets/Mars-removebg-preview.png",
     rocket: "./assets/rocket.png",
@@ -44,24 +44,25 @@ const departmentData = [
     color: "linear-gradient(270deg, #6C5330 70%, #F8C462 100%)"
   },
   {
-    id: "mech",
-    name: "MECH",
+    id: "icb",
+    name: "ICB",
+    
     score: 0,
     image: "./assets/Saturn-removebg-preview.png",
     rocket: "./assets/rocket.png",
     color: "linear-gradient(270deg, #010101 0%, #F5A511 100%)"
   },
   {
-    id: "cseds",
-    name: "CSEDS",
+    id: "it",
+    name: "IT",
     score: 90,
     image: "./assets/Uranus-removebg-preview.png",
     rocket: "./assets/rocket.png",
     color: "linear-gradient(270deg, #0675E4 70%, #CAEDF9 100%)"
   },
   {
-    id: "icb",
-    name: "ICB",
+    id: "mech",
+    name: "MECH",
     score: 0,
     image: "./assets/Neptune-removebg-preview.png",
     rocket: "./assets/rocket.png",
