@@ -124,26 +124,28 @@ export function BloodDonationLeaderboard() {
     >
       {/* Title */}
       <div className="flex justify-center items-center gap-4 mb-6">
-        <img
-          src="/peacock.svg"
-          alt="Decorative peacock"
+         <img
+          src="/assets/DJSNSSLogo.png"
+          alt=""
           width={90}
           height={90}
+          style={{ transform: "scaleX(1)" }}
         />
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-red-700 tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]">
+          <h1 className="text-4xl md:text-5xl font-bold text-skyblue-600 tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]">
+          
             BLOOD DONATION 🩸
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold text-red-600 tracking-wide mt-1 italic">
+          <h2 className="text-2xl md:text-3xl font-bold text-skyblue-500 tracking-wide mt-1 italic">
             LEADERBOARD
           </h2>
         </div>
         <img
-          src="/peacock.svg"
-          alt="Decorative peacock"
+          src="/assets/DJSNSSLogo.png"
+          alt=""
           width={90}
           height={90}
-          style={{ transform: "scaleX(-1)" }}
+          style={{ transform: "scaleX(1)" }}
         />
       </div>
 
