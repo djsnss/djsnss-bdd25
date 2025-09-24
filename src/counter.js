@@ -20,13 +20,13 @@ const RANGE = "Sheet1!H:H";
 
 // Categories
 let categoryCounts = {
-  COMPS: 0,
-  IT: 0,
-  CSEDS: 0,
   AIDS: 0,
   AIML: 0,
-  IOT: 0,
+  COMPS: 0,
+  CSEDS: 0,
   EXTC: 0,
+  ICB: 0,
+  IT: 0,
   MECH: 0,
   Outsider: 0,
 };
