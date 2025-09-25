@@ -69,8 +69,8 @@ const departmentData = [
     color: "linear-gradient(270deg, #0239FF 70%, #C5CAFA 100%)"
   },
   {
-    id: "outsiders",
-    name: "Outsiders",
+    id: "outsider",
+    name: "Outsider",
     score: 0,
     image: "./assets/Sun.png",
     rocket: "./assets/rocket.png",
@@ -84,14 +84,31 @@ export function BloodDonationLeaderboard() {
   );
   const [targetScores, setTargetScores] = useState(departmentData.map(() => 0));
 
-  // Simulate API fetch
   useEffect(() => {
-    setTargetScores([85, 88, 95, 88, 92, 80, 90, 92,85]);
-  }, []);
+    const fetchData = () => {
+      fetch('https://djsnss-bdd25.onrender.com/bdd25/counts')
+        .then(res => res.json())
+        .then(data => {
+          const newScores = departmentData.map(
+            dept => data[dept.name] ?? 0
+          );
+          setTargetScores(newScores);
+        })
+        .catch(error => {
+          console.error('Error fetching leaderboard stats:', error);
+        });
+    }
+
+    // Initial fetch.
+    fetchData()
+    // Poll every 7 seconds.
+    const pollInterval = setInterval(fetchData, 7000)
+    return () => clearInterval(pollInterval)
+  }, [])
 
   // Animate scores
   useEffect(() => {
-    const interval = setInterval(() => {
+    let interval = setInterval(() => {
       setAnimatedScores((prev) => {
         const newScores = [...prev];
         let completed = true;
@@ -104,7 +121,9 @@ export function BloodDonationLeaderboard() {
             completed = false;
           }
         }
-        if (completed) clearInterval(interval);
+        if (completed) {
+          clearInterval(interval);
+        }
         return newScores;
       });
     }, 20);
