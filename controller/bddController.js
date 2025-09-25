@@ -3,11 +3,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
-const KEYFILE = "./key.json";   // Keep in .gitignore
+const KEYFILE = "";   // Keep in .gitignore
 
 // Load service account key
 const auth = new google.auth.GoogleAuth({
-    keyFile: KEYFILE,
+    credentials: JSON.parse(process.env.SERVICE_ACCOUNT_KEY),
     scopes: SCOPES,
 });
 
