@@ -20,3 +20,5 @@ Thumbs.db
 # Optional cache
 .cache/
 dist/
+key.json
+/key.json
