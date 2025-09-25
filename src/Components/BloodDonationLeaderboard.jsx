@@ -6,74 +6,72 @@ const departmentData = [
     id: "aids",
     name: "AIDS",
     score: 0,
-    image: "./assets/Mercury-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Mercury-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #F3AD5C 70%, #F6F1AE 100%)"
   },
   {
     id: "aiml",
     name: "AIML",
     score: 0,
-    image: "./assets/Venus-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Venus-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #78470F 70%, #EEDACC 100%)"
-
   },
   {
     id: "comps",
     name: "COMPS",
     score: 0,
-    image: "./assets/Earth-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Earth-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #4AABDF 70%, #CEF2FF 100%)"
   },
   {
     id: "cseds",
     name: "CSEDS",
     score: 0,
-    image: "./assets/Mars-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Mars-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #FB1F07 70%, #FFE2DD 100%)"
   },
   {
     id: "extc",
     name: "EXTC",
     score: 0,
-    image: "./assets/Jupiter-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Jupiter-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #6C5330 70%, #F8C462 100%)"
   },
   {
     id: "icb",
     name: "ICB",
-    
     score: 0,
-    image: "./assets/Saturn-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Saturn-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #010101 0%, #F5A511 100%)"
   },
   {
     id: "it",
     name: "IT",
     score: 90,
-    image: "./assets/Uranus-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Uranus-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #0675E4 70%, #CAEDF9 100%)"
   },
   {
     id: "mech",
     name: "MECH",
     score: 0,
-    image: "./assets/Neptune-removebg-preview.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Neptune-removebg-preview.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #0239FF 70%, #C5CAFA 100%)"
   },
   {
     id: "outsider",
     name: "Outsider",
     score: 0,
-    image: "./assets/Sun.png",
-    rocket: "./assets/rocket.png",
+    image: "/assets/Sun.png",
+    rocket: "/assets/rocket.png",
     color: "linear-gradient(90deg, #fdfd08ff 0%, #ea951dff 88.94%)"
   },
 ];
