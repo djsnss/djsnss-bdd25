@@ -6,6 +6,17 @@ dotenv.config();
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
 
+// Debug environment variables
+console.log("Environment variables check:");
+console.log(
+  "GOOGLE_SERVICE_ACCOUNT_KEY exists:",
+  !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY
+);
+console.log(
+  "GOOGLE_SERVICE_ACCOUNT_KEY length:",
+  process.env.GOOGLE_SERVICE_ACCOUNT_KEY?.length || 0
+);
+
 // Service Account setup
 let auth;
 try {
@@ -80,7 +91,7 @@ export async function fetchCategoryCounts() {
       .slice(1)
       .flat()
       .forEach((value) => {
-        const cleanValue = value.trim();
+        const cleanValue = value ? value.toString().trim() : "";
         if (!cleanValue) return;
 
         if (cleanValue in categoryCounts) {
