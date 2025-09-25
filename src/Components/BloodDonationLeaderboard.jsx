@@ -86,7 +86,7 @@ export function BloodDonationLeaderboard() {
 
   // Simulate API fetch
   useEffect(() => {
-    setTargetScores([95, 88, 95, 88, 92, 80, 90, 92,85]);
+    setTargetScores([85, 88, 95, 88, 92, 80, 90, 92,85]);
   }, []);
 
   // Animate scores
@@ -116,11 +116,7 @@ export function BloodDonationLeaderboard() {
 
   return (
     <div
-      className="w-full rounded-3xl p-6 shadow-xl"
-      style={{
-        background:
-          "linear-gradient(135deg, rgba(245,245,245,0.9), rgba(230,230,230,0.9))", // soft white-grey gradient
-      }}
+      className="w-full rounded-3xl p-6 relative bg-transparent"
     >
       {/* Title */}
       <div className="flex justify-center items-center gap-4 mb-6">
@@ -129,16 +125,17 @@ export function BloodDonationLeaderboard() {
           alt=""
           width={90}
           height={90}
+          className="absolute left-6 top-4 p-2 bg-white rounded-full"
           style={{ transform: "scaleX(1)" }}
         />
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-skyblue-600 tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]"
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1768AA] tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)]"
           style={{ fontFamily: "'Raleway', sans-serif" }}
           >
           
-            BLOOD DONATION 🩸
+            BLOOD DONATION DRIVE🩸
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold text-skyblue-500 tracking-wide mt-1 italic"
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1768AA] tracking-wide mt-1 italic"
           style={{ fontFamily: "'Raleway', sans-serif" }}
           >
             LEADERBOARD
@@ -158,7 +155,7 @@ export function BloodDonationLeaderboard() {
             <div key={dept.id} className="flex items-center gap-4">
               {/* Department name */}
               <div className="w-24 text-center">
-                <span className="font-bold text-xl text-red-700 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]"
+                <span className="italic font-semibold text-2xl text-[#1768AA] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]"
                 style={{ fontFamily: "'Roboto', sans-serif" }}
                 >
                   {dept.name}
@@ -167,11 +164,7 @@ export function BloodDonationLeaderboard() {
 
               {/* Progress bar container */}
               <div
-                className="relative flex-1 h-12 rounded-full shadow-inner overflow-visible"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(245,245,245,0.8), rgba(230,230,230,0.8))",
-                }}
+                className="relative flex-1 h-12 rounded-full shadow-inner overflow-visible bg-white"
               >
                 <div className="overflow-hidden h-full rounded-full">
                   <div
@@ -213,7 +206,7 @@ export function BloodDonationLeaderboard() {
                     scale: "1.2",
                   }}
                 />
-                <span className="font-bold text-2xl md:text-3xl text-red-700 bg-amber-100 px-2 md:px-3 py-1 rounded-full"
+                <span className="font-bold text-2xl md:text-3xl text-white bg-[#1768AA] px-2 md:px-3 py-1 rounded-full"
                 style={{ fontFamily: "'Saira', sans-serif" }}
                 >
                   {animatedScores[index]}

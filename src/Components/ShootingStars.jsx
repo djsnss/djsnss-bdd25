@@ -48,7 +48,7 @@ const StarsSection = styled.section`
 // Individual star styling
 const Star = styled.span`
   position: absolute;
-  width: 4px;
+  width: 200px;
   height: 4px;
   background: #fff;
   border-radius: 50%;
@@ -88,7 +88,7 @@ const ShootingStars = ({ starCount = 30 }) => {
           top: Math.floor(Math.random() * height),
           right: Math.floor(Math.random() * width),
           delay: Math.random() * 5,
-          duration: 1 + Math.random() * 2
+          duration: 1 + Math.random() * 10
         });
       }
 
