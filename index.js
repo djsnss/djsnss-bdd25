@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import routes from "./src/routes.js";
+import routes from "./routes/bddRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -10,10 +10,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 // Routes
-app.use("/api", routes);
+app.use("/bdd25", routes);
 
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`Go to http://localhost:${PORT}/api/counts`);
 });
