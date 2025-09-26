@@ -66,14 +66,14 @@ const departmentData = [
     rocket: "/assets/rocket.png",
     color: "linear-gradient(270deg, #0239FF 70%, #C5CAFA 100%)"
   },
-  {
-    id: "outsider",
-    name: "Outsider",
-    score: 0,
-    image: "/assets/Sun.png",
-    rocket: "/assets/rocket.png",
-    color: "linear-gradient(90deg, #fdfd08ff 0%, #ea951dff 88.94%)"
-  },
+  // {
+  //   id: "outsider",
+  //   name: "Outsider",
+  //   score: 0,
+  //   image: "/assets/Sun.png",
+  //   rocket: "/assets/rocket.png",
+  //   color: "linear-gradient(90deg, #fdfd08ff 0%, #ea951dff 88.94%)"
+  // },
 ];
 
 export function BloodDonationLeaderboard() {
